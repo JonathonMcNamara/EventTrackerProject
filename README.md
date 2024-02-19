@@ -10,7 +10,6 @@
 | PUT       | `/api/meals/1`    | JSON of a new version of meal `1` | JSON of updated meal | 200,404,400 |
 | DELETE    | `/api/meals/1`    |              |               | 204,404,400|
 
-
 ## Technologies Used
 - Java
 - JPA

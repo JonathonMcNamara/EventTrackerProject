@@ -11,7 +11,7 @@
 | DELETE    | `/api/meals/1`    |              |               | 204,404,400|
 
 
-##Technologies Used
+## Technologies Used
 - Java
 - JPA
 - REST Api

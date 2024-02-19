@@ -23,6 +23,11 @@ DROP TABLE IF EXISTS `meal` ;
 CREATE TABLE IF NOT EXISTS `meal` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
+  `protein` INT NULL,
+  `carbs` INT NULL,
+  `fats` INT NULL,
+  `calories` DOUBLE NULL,
+  `date` DATETIME NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -42,7 +47,9 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `diettrackerdb`;
-INSERT INTO `meal` (`id`, `name`) VALUES (1, 'breakfast');
+INSERT INTO `meal` (`id`, `name`, `protein`, `carbs`, `fats`, `calories`, `date`) VALUES (1, 'breakfast', 50, 40, 30, 630, NULL);
+INSERT INTO `meal` (`id`, `name`, `protein`, `carbs`, `fats`, `calories`, `date`) VALUES (2, 'lunch', 50, 40, 30, 630, NULL);
+INSERT INTO `meal` (`id`, `name`, `protein`, `carbs`, `fats`, `calories`, `date`) VALUES (3, 'dinner', 50, 40, 30, 630, NULL);
 
 COMMIT;
 

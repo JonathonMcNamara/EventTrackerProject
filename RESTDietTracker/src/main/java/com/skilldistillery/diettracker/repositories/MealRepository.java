@@ -6,5 +6,6 @@ import com.skilldistillery.diettracker.entities.Meal;
 
 public interface MealRepository extends JpaRepository<Meal, Integer> {
 	
+	Meal findById(int id);
 
 }

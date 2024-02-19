@@ -1,5 +1,6 @@
 package com.skilldistillery.diettracker.entities;
 
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 import jakarta.persistence.Entity;
@@ -15,6 +16,16 @@ public class Meal {
 	private int id;
 	
 	private String name;
+	
+	private int protein;
+	
+	private int carbs;
+	
+	private int fats;
+	
+	private int calories;
+	
+	private LocalDateTime date;
 	
 	public Meal() {
 		
@@ -36,9 +47,44 @@ public class Meal {
 		this.name = name;
 	}
 
-	@Override
-	public String toString() {
-		return "Meal [id=" + id + ", name=" + name + "]";
+	public int getProtein() {
+		return protein;
+	}
+
+	public void setProtein(int protein) {
+		this.protein = protein;
+	}
+
+	public int getCarbs() {
+		return carbs;
+	}
+
+	public void setCarbs(int carbs) {
+		this.carbs = carbs;
+	}
+
+	public int getFats() {
+		return fats;
+	}
+
+	public void setFats(int fats) {
+		this.fats = fats;
+	}
+
+	public int getCalories() {
+		return calories;
+	}
+
+	public void setCalories(int calories) {
+		this.calories = calories;
+	}
+
+	public LocalDateTime getDate() {
+		return date;
+	}
+
+	public void setDate(LocalDateTime date) {
+		this.date = date;
 	}
 
 	@Override
@@ -57,7 +103,13 @@ public class Meal {
 		Meal other = (Meal) obj;
 		return id == other.id;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Meal [id=" + id + ", name=" + name + ", protein=" + protein + ", carbs=" + carbs + ", fats=" + fats
+				+ ", calories=" + calories + ", date=" + date + "]";
+	}
+
 	
 
 }

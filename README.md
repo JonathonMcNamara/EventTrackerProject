@@ -6,9 +6,9 @@
 |-----------|-------------------|--------------|---------------|---------|
 | GET       | `/api/meals`      |              |               | 200 |
 | GET       | `/api/meals/1`    |              | JSON of meal `1` | 200,404 |
-| POST      | `/api/books`      | JSON of a new meal entity  | JSON of created _book_ | 201,400 |
-| PUT       | `/api/books/1`    | JSON of a new version of meal `1` | JSON of updated meal | 200,404,400 |
-| DELETE    | `/api/books/1`    |              |               | 204,404,400|
+| POST      | `/api/meals`      | JSON of a new meal entity  | JSON of created _book_ | 201,400 |
+| PUT       | `/api/meals/1`    | JSON of a new version of meal `1` | JSON of updated meal | 200,404,400 |
+| DELETE    | `/api/meals/1`    |              |               | 204,404,400|
 ##Technologies Used
 - Java
 - JPA
